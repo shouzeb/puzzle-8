@@ -1,5 +1,5 @@
 class Puzzle:
-    goal_state=[0,1,2,3,4,5,6,7,8]
+    goal_state= [0,1,2,3,4,5,6,7,8]
     heuristic=None
     evaluation_function=None
     needs_hueristic=False
