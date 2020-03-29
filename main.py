@@ -25,7 +25,7 @@ from RBFS_search import recursive_best_first_search
 from puzzle import Puzzle
 
 
-state=[[1 , 2, 3, 4, 5, 6, 7, 8, 0]]
+state=[[1 , 2, 3, 4, 5, 6, 7, 0, 8]]
 
 for i in range(0,1):
     Puzzle.num_of_instances=0
