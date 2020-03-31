@@ -36,7 +36,7 @@ for i in range(0,1):
     print('space:',Puzzle.num_of_instances)
     print('time:',t1)
     print()
-"""
+
     Puzzle.num_of_instances = 0
     t0 = time()
     astar = Astar_search(state[i])
@@ -55,4 +55,4 @@ for i in range(0,1):
     print('time:', t1)
     print()
     
-    print('------------------------------------------')"""
+    print('------------------------------------------')
