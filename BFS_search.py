@@ -12,7 +12,7 @@ def breadth_first_search(initial_state):
     while not(q.empty()):
         node=q.get()
         explored.append(node.state)
-        
+
         children=node.generate_child()
         print(children)
         for child in children:
