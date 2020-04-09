@@ -51,6 +51,7 @@ class Puzzle:
     def generate_child(self):
         children=[]
         x = self.state.index(0)
+        print("this is position of zero",x)
         i = int(x / 3)
         j = int(x % 3)
         legal_actions=self.find_legal_actions(i,j)
