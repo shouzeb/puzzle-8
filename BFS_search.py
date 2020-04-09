@@ -11,7 +11,9 @@ def breadth_first_search(initial_state):
     explored=[]
     while not(q.empty()):
         node=q.get()
+        
         explored.append(node.state)
+        
 
         children=node.generate_child()
         print(children)
