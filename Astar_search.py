@@ -1,11 +1,11 @@
 from queue import PriorityQueue
-from puzzle import Puzzle
+from puzzle import Runner
 
 
 def Astar_search(initial_state):
     count=0
     explored=[]
-    start_node=Puzzle(initial_state,None,None,0,True)
+    start_node=Runner(initial_state,None,None,0,True)
     q = PriorityQueue()
     q.put((start_node.evaluation_function,count,start_node))
 
