@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Apr 10 15:18:55 2020
+
+@author: Shouzeb
+"""
 class Runner:
     goal_state= [0,1,2,3,4,5,6,7,8]
     heuristic=None
