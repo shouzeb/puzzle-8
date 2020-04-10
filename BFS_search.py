@@ -1,9 +1,9 @@
 from queue import Queue
-from puzzle import Puzzle
+from puzzle import Runner
 
 
 def breadth_first_search(initial_state):
-    start_node = Puzzle(initial_state, None, None, 0)
+    start_node = Runner(initial_state, None, None, 0)
     if start_node.goal_test():
         return start_node.find_solution()
     q = Queue()
