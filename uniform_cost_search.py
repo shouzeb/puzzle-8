@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Apr 28 20:14:30 2020
+Created on Thu Apr 30 14:26:36 2020
 
 @author: Shouzeb
 """
-
 from queue import PriorityQueue
 from puzzle import Runner
 
-def Astar_Search(starting_node):
-    count=0
+def uniform_cost_search(starting_node):
+    count=0    #indicates how many nodes have been trasversed
     fringe=[]
-    start_node=Runner(starting_node, None, None, 0, True,False,False)
+    start_node=Runner(starting_node, None, None, 0, False,False,True)
     q=PriorityQueue()
     q.put((start_node.function,count,start_node))
     while not q.empty():
@@ -29,3 +28,4 @@ def Astar_Search(starting_node):
                 #print(child)
                 q.put((child.function,count,child))
     return
+

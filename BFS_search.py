@@ -1,28 +1,33 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Apr 10 15:18:55 2020
+Created on Thu Apr 23 23:22:25 2020
 
 @author: Shouzeb
 """
-from queue import Queue
+
 from puzzle import Runner
+from queue import Queue
 
-
-def breadth_first_search(initial_state):
-    start_node = Runner(initial_state, None, None, 0)
-    if start_node.goal_test():
-        return start_node.find_solution()
-    q = Queue()
+def Breath_First_Search(initial_state):
+    start_node = Runner(initial_state, None, None,0,False,False,False)
+    if start_node.goal_state_check():
+        return start_node.find_solution_path()
+    q=Queue()
     q.put(start_node)
-    explored=[]
+    fringe=[]
     while not(q.empty()):
         node=q.get()
-        explored.append(node.state)
+        fringe.append(q)
         children=node.generate_child()
-        print(children)
+        #print(children)
         for child in children:
-            if child.state not in explored:
-                if child.goal_test():
-                    return child.find_solution()
+            #print(str(child))
+            if child.state not in fringe:
+                
+                if child.goal_state_check():
+                    return child.find_solution_path()
                 q.put(child)
     return
+        
+    
+    
