@@ -12,7 +12,7 @@ from DFS_search import depth_first_search
 from Astar_search import Astar_Search
 from greedy_search import Greedy_Search
 from uniform_cost_search import uniform_cost_search
-state=[5,1,2,3,0,4,6,7,8]
+state=[1,2,0,3,4,5,6,7,8]
 
 
 print("\t\t\t>>>>>>Implementating Astar Search. Kindly wait...<<<<<<")
